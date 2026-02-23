@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+    <% messages.forEach((message) => { %>
+        <div class="messages">
+            <p><%= message.user %></p>
+            <p><%= message.text %></p>
+            <p><%= message.added %></p>
+        </div>
+    <% }) %>
+    <a href="/new"><button>New+</button></a>
+</body>
+</html>
